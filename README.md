@@ -64,7 +64,7 @@ If you create a Render **Web Service** manually instead of using the Blueprint f
 | --- | --- |
 | `NODE_ENV` | `production` |
 | `MONGODB_REQUIRED` | `true` |
-| `MONGODB_URI` | Your MongoDB Atlas connection string |
+| `MONGODB_URI` | Your MongoDB Atlas connection string starting with `mongodb+srv://` |
 | `JWT_SECRET` | A long random secret |
 | `JWT_EXPIRES_IN` | `7d` |
 | `CORS_ORIGIN` | `*` or your frontend URL |
@@ -72,3 +72,11 @@ If you create a Render **Web Service** manually instead of using the Blueprint f
 | `RATE_LIMIT_MAX` | `100` |
 
 Use `npm install` as the build command and `npm start` as the start command.
+
+Example MongoDB Atlas URI format:
+
+```text
+mongodb+srv://USERNAME:PASSWORD@cluster0.xxxxx.mongodb.net/last_minute_life?retryWrites=true&w=majority
+```
+
+Do not use `localhost`, angle brackets, placeholder text, or a URI without `mongodb://` / `mongodb+srv://` on Render.
