@@ -55,3 +55,20 @@ This repo includes `render.yaml` for Render Blueprint deploys.
 4. Render generates `JWT_SECRET` automatically and deploys with `npm install` and `npm start`.
 
 The deployed service uses `/health` as its health check and serves Swagger docs at `/api-docs`.
+
+### Manual Render Deploy
+
+If you create a Render **Web Service** manually instead of using the Blueprint flow, add these environment variables in **Environment** before deploying:
+
+| Key | Value |
+| --- | --- |
+| `NODE_ENV` | `production` |
+| `MONGODB_REQUIRED` | `true` |
+| `MONGODB_URI` | Your MongoDB Atlas connection string |
+| `JWT_SECRET` | A long random secret |
+| `JWT_EXPIRES_IN` | `7d` |
+| `CORS_ORIGIN` | `*` or your frontend URL |
+| `RATE_LIMIT_WINDOW_MS` | `900000` |
+| `RATE_LIMIT_MAX` | `100` |
+
+Use `npm install` as the build command and `npm start` as the start command.
