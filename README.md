@@ -44,3 +44,14 @@ To create the first admin, set `ADMIN_USERNAME`, `ADMIN_EMAIL`, and `ADMIN_PASSW
 ```bash
 npm run create-admin
 ```
+
+## Deploy To Render
+
+This repo includes `render.yaml` for Render Blueprint deploys.
+
+1. Create a MongoDB Atlas database and copy its connection string.
+2. In Render, choose **New > Blueprint** and connect this GitHub repo.
+3. When Render prompts for `MONGODB_URI`, paste the MongoDB Atlas connection string.
+4. Render generates `JWT_SECRET` automatically and deploys with `npm install` and `npm start`.
+
+The deployed service uses `/health` as its health check and serves Swagger docs at `/api-docs`.
