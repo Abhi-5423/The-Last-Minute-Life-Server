@@ -9,6 +9,7 @@ const playerStatisticRoutes = require('./playerStatisticRoutes');
 const ruleRoutes = require('./ruleRoutes');
 const serverStatusRoutes = require('./serverStatusRoutes');
 const staffRoutes = require('./staffRoutes');
+const assistantRoutes = require('./assistantRoutes');
 
 const router = express.Router();
 
@@ -21,5 +22,6 @@ router.use('/player-statistics', playerStatisticRoutes);
 router.use('/rules', ruleRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/contact-messages', contactRoutes);
+router.use('/assistant', assistantRoutes);
 
 module.exports = router;

@@ -11,6 +11,7 @@ module.exports = [
         module: 'readonly',
         require: 'readonly',
         process: 'readonly',
+        fetch: 'readonly',
         __dirname: 'readonly'
       }
     },

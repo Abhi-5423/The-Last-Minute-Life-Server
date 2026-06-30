@@ -1,0 +1,74 @@
+[
+  {
+    "id": "hospital-rapid-care",
+    "name": "RapidCare Emergency Hospital",
+    "category": "Health",
+    "description": "24/7 emergency care with trauma support, pharmacy access, and ambulance coordination.",
+    "price": 120,
+    "distanceKm": 1.8,
+    "rating": 4.7,
+    "availability": 0.96,
+    "responseMinutes": 8,
+    "tags": ["hospital", "emergency", "ambulance", "nearby"]
+  },
+  {
+    "id": "hotel-city-rest",
+    "name": "CityRest Express Hotel",
+    "category": "Stay",
+    "description": "Affordable same-night hotel with self check-in and late arrival support.",
+    "price": 54,
+    "distanceKm": 3.2,
+    "rating": 4.3,
+    "availability": 0.88,
+    "responseMinutes": 12,
+    "tags": ["hotel", "cheap", "tonight", "stay"]
+  },
+  {
+    "id": "cab-nightline",
+    "name": "NightLine Cab Assist",
+    "category": "Transport",
+    "description": "Fast cab matching for late-night airport, hospital, and railway station trips.",
+    "price": 18,
+    "distanceKm": 0.9,
+    "rating": 4.5,
+    "availability": 0.91,
+    "responseMinutes": 5,
+    "tags": ["cab", "transport", "airport", "railway"]
+  },
+  {
+    "id": "pharmacy-247",
+    "name": "OpenNow 24/7 Pharmacy",
+    "category": "Health",
+    "description": "Round-the-clock medicine pickup and delivery with prescription upload support.",
+    "price": 9,
+    "distanceKm": 1.1,
+    "rating": 4.4,
+    "availability": 0.93,
+    "responseMinutes": 6,
+    "tags": ["pharmacy", "medicine", "delivery", "health"]
+  },
+  {
+    "id": "food-quickbite",
+    "name": "QuickBite Late Kitchen",
+    "category": "Food",
+    "description": "Reliable late-night meals, bottled water, and essentials delivered quickly.",
+    "price": 13,
+    "distanceKm": 2.4,
+    "rating": 4.2,
+    "availability": 0.82,
+    "responseMinutes": 18,
+    "tags": ["food", "late night", "delivery", "essentials"]
+  },
+  {
+    "id": "repair-fixnow",
+    "name": "FixNow Utility Help",
+    "category": "Home",
+    "description": "Urgent home repair help for electricity, plumbing, locks, and appliance issues.",
+    "price": 35,
+    "distanceKm": 4.1,
+    "rating": 4.6,
+    "availability": 0.74,
+    "responseMinutes": 35,
+    "tags": ["repair", "home", "electrician", "plumber"]
+  }
+]
